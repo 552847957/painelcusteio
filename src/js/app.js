@@ -3,9 +3,10 @@ import '../css/bootstrap.css';
 import '../css/font-awesome.min.css';
 import '../css/swiper.css';
 import '../css/style.css';
+import '../css/painelcusteio.css';
+
 
 import './barra.js';
-// import 'jquery';
 import 'bootstrap';
 import './swiper.jquery.min.js';
 import './jquery.fancybox.min.js';

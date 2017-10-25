@@ -1,0 +1,433 @@
+* {
+    outline: none
+}
+body.modal-open {
+    overflow: hidden !important;
+}
+
+#box4 #object2 .qvobject , #box4 #object3 .qvobject, #box2 #object4 .qvobject, #box3 #object4 .qvobject{
+    height: 650px !important;
+}
+header .row-fluid{
+    margin: 14px 0;
+}
+#box1 #object4 .qvobject, #box2 #object1 .qvobject, #box3 #object1 .qvobject, #box4 #object1 .qvobject{
+    height: 430px !important;
+}
+#modlgn-username{
+    width: 50%;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0px 45px 0;
+    width: 100%;
+    min-height: 700px;
+}
+#box1 .btnVoltar{
+    display: none !important;
+}
+#box2 #object4.col-6, #box3 #object4.col-6{
+    width: 100% !important;
+}
+#gastoTotalItem, #gastoTotalItem2, #gastoTotalItem3{
+    display: none;
+}
+.bs-example-tabs{
+    display: none;
+    position: absolute;
+    right: 14px;
+    top: 447px;
+    z-index: 999;
+}
+
+#box2 .changeGraph, #box3 .changeGraph, #box4 .changeGraph{
+    position: absolute !important;
+    right: 9999px;
+}
+#box4 #object3.changeGraph{
+    position: relative !important;
+    right: inherit !important;
+}
+#box2 .bs-example-tabs, #box3 .bs-example-tabs{
+    display: block;
+}
+#box1 #gastoTotalItem, #box1 #gastoTotalItem2, #box1 #gastoTotalItem3{
+    display: block !important;
+}
+#box4 .btnAvancar{
+    display: none !important;
+}
+#box4 #object4{
+    display: none;
+}
+#box4 .col-6{
+    width: 100% !important;
+}
+.filterHide .holder-filtros{
+    visibility: hidden;
+    left: -9999px;
+    position: absolute;
+}
+.nav-tabs>li {
+    width: 50%;
+    box-sizing: content-box;
+}
+
+.tab-content>.tab-pane {
+    display: block !important;
+}
+
+.tab-content>.tab-pane.fade {
+    position: absolute;
+}
+
+.nav-tabs {
+    border: 0 !important;
+    margin-left: 7px !important;
+    margin-top: 14px !important;
+}
+
+.nav-tabs>li>a>i {
+    font-size: 35px;
+}
+
+.nav-tabs>li>a>span {
+    display: inline-block;
+    width: calc(100% - 73px);
+    font-size: 18px;
+    line-height: 1.1;
+    margin-left: 15px;
+    position: relative;
+    top: -4px;
+    text-align: center;
+}
+
+.nav-tabs>li>a {
+    border: 0 !important;
+    display: block !important;
+    border-radius: 3px !important;
+    background: #eaeaea;
+    box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.13) !important;
+    height: 40px;
+    padding: 5px 10px;
+    color: #555555;
+    margin-right: 10px !important;
+    box-sizing: content-box;
+}
+.nav-tabs>li>a:hover{
+    background-color: #868686 !important;
+    color: #fff;
+}
+.nav-tabs>.active>a {
+    border: 0 !important;
+    background-color: #1D70B7 !important;
+    color: #fff !important;
+}
+
+.nav-tabs>.active>a .fa-circle-o:before {
+    content: "\f05d";
+}
+
+.tab-content>.tab-pane.fade.in {
+    position: relative;
+}
+
+.float-left {
+    float: left;
+}
+
+.boxObject {
+    position: relative;
+    min-height: 445px;
+    box-shadow: 0 1px 4px 0 rgba(215, 215, 215, 0.50);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.ellips-text {
+    overflow: inherit !important
+}
+
+.ellips-text span {
+    font-size: 38px;
+    font-weight: 700
+}
+
+.qv-object .qv-object-content-container table tbody tr td,
+.qv-object .qv-object-content-container th {
+    padding: 6px 6px;
+}
+
+.qvlgobject {
+    height: 790px !important;
+}
+
+.qvgdobject {
+    height: 590px ;
+}
+
+.qvltobject {
+    height: 75px !important;
+}
+.boxObject:hover{
+    -webkit-box-shadow: 0 0 6px 1px rgba(250,208,42,0.7);
+    box-shadow: 0 0 6px 1px rgba(250,208,42,0.7);
+}
+.boxObject:hover .btnExpand, .boxObject:hover .btnTable{
+    opacity: 1;
+}
+.btnExpand, .btnTable, .btnDexpand {
+    overflow: hidden;
+    position: absolute;
+     right: 28px;
+    top: 32px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #eaeaea;
+    z-index: 999;
+    width: 41px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 2px 6px 0 rgba(0,0,0,0.2);
+    box-shadow: 1px 2px 6px 0 rgba(0,0,0,0.2);
+    height:40px;
+    transition: all 0.2s;
+}
+.btnTable{
+    right: 78px;
+    font-size: 21px;
+    height: 40px;
+}
+.btnExpand i, .btnDexpand i{
+    position: absolute;
+    top: 13px;
+    right: 14px
+}
+.btnTable i{
+    position: absolute;
+    top: 12px;
+    right: 11px
+}
+.boxObject .btnExpand, .boxObject .btnTable{
+    opacity: 0
+}
+.modal{
+    z-index: 1002 !important;
+}
+#box2 #object1 .btnTable, #box3 #object1 .btnTable{
+    // display: none;
+}
+.modal-backdrop{
+    z-index: 1001 !important; 
+}
+.btnExpand:hover, .btnTable:hover, .btnDexpand:hover {
+    background-color: #1D70B7;
+    color: #fff;
+    width: 214px;
+}
+
+.btnExpand:hover .btnText, .btnTable:hover .btnText, .btnDexpand:hover .btnText{
+    display: block;
+    float: left;
+    width: calc(100% - 36px);
+    font-size: 16px;
+    margin-left: 5px;
+    position: relative;
+    left: 4px;
+}
+.btnText{
+    display: none;
+}
+.myModal.modalShow{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.myModal .modal-content{
+    min-height: 600px;
+    z-index: 1001;
+}
+.backdrop{
+    transition: all 0.3s ease;
+    position: absolute;
+    width: 100%;
+    height: 104%;
+    background-color: #000;
+    opacity: 0.7;
+    display: none;
+    pointer-events: none;
+    z-index: 1000;
+}
+#mainContainer{
+    overflow-x: hidden
+}
+.backdrop.show{
+    display: block;
+}
+.myModal {
+    transition: all 0.3s ease;
+    width: 98% !important;
+    position: fixed;
+    top: 8%;
+    left: -9999px;
+    z-index: 1002;
+}
+
+.myModal.fade.in {
+    pointer-events: inherit;
+    top: 8% !important;
+}
+
+.measure-title {
+    display: none;
+}
+
+
+#gastoTotalItemModal {
+    height: 100px !important
+}
+
+.expandObj {
+    width: 100% !important;
+    transition: width 0.3s;
+}
+
+.expandObj .qvobject {
+    height: 590px !important;
+}
+#topContent{
+    background-color: #fff;
+}
+#topContent.fixed {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+}
+
+.filter-btn.fixed {
+    position: fixed;
+    top: 157px;
+}
+
+.holder-filtros.fixed {
+    position: fixed;
+    top: 137px;
+}
+#topContent h2{
+	font-size: 36px;
+	-webkit-transition: font-size 0.6s; /* Safari */
+    transition: font-size 0.6s;
+    font-weight: bold;
+}
+
+#topContent.fixed+.row {
+    margin-top: 139px;
+}
+#topContent.fixed .page-header{
+	// margin-top: 10px;
+	// -webkit-transition: margin-top 0.6s; /* Safari */
+ //    transition: margin-top 0.6s;
+}
+
+.qvplaceholder,
+.qvobject {
+    flex: 1 1 auto;
+    height: 339px;
+    margin: 15px 0 0 0px;
+    float: left;
+}
+.qv-collapsed-listbox{
+	height: 38px !important;
+}
+.title-wrapper{
+	position: relative;
+}
+.title-wrapper .title{
+	position: absolute;
+	bottom: 4px;
+}
+.qv-object .qv-object-header{
+	padding: 0 !important;
+}
+.nav-qvobject {
+    width: 100% !important;
+    height: 50px;
+    margin-bottom: -8px;
+}
+
+.alert {
+    width: 100%;
+    margin: 15px 0px -7px ;
+    font-size: 16px;
+    padding: 25px 35px 25px 14px !important;
+    text-align: center;
+}
+
+.filter-btn .fa-angle-double-left {
+    font-size: 20px !important;
+    margin-right: 9px;
+}
+
+.filter-btn span {
+    margin-top: 3px;
+    text-decoration: underline;
+}
+
+.qvobject .qv-object-wrapper {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+
+    width: 98%;
+    margin: 0 auto;
+}
+
+#popup {
+    background-color: #c3534b;
+    color: #FFFFFF;
+    position: fixed;
+    max-width: 250px;
+    padding: 10px;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+    display: none;
+    border-radius: 5px;
+    z-index: 6;
+    font-family: sans-serif;
+}
+
+.close {
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+    position: absolute;
+    right: 9px;
+    top: 7px;
+}
+
+.close:hover {
+    opacity: .5;
+}
+
+#popupText {
+    margin-right: 23px;
+}
+
+@media (max-width : 1100px){
+    .col-6{
+        width: 100% !important
+    }
+    .btnClick span{
+        display: none;
+    }
+}

@@ -77,42 +77,21 @@ export var jq = jQuery(function(){
 	verifyFirstSlide();
 
 	//Smooth Scrolling
-	jQuery('a[href^="#"]').on('click',function (e){
-		if (jQuery('.home').length > 0) {
-			e.preventDefault();
-			var target = this.hash;
-			var $target = jQuery(target);
-			jQuery('html, body').stop().animate({
-				'scrollTop': $target.offset().top
-			}, 900, 'swing', function () {
-				window.location.hash = target;
-			});
-		}
-	});
+	// jQuery('a[href^="#"]').on('click',function (e){
+	// 	if (jQuery('.home').length > 0) {
+	// 		e.preventDefault();
+	// 		var target = this.hash;
+	// 		var $target = jQuery(target);
+	// 		jQuery('html, body').stop().animate({
+	// 			'scrollTop': $target.offset().top
+	// 		}, 900, 'swing', function () {
+	// 			window.location.hash = target;
+	// 		});
+	// 	}
+	// });
 
 	//Click Filtros
-	function filterClick(){
-		if (jQuery(window).width() >= 991){
-			jQuery('.filter-btn').on('click', function(){
-				jQuery(this).toggleClass('active');
-				jQuery('.holder-filtros').toggle( "slide" );
-				jQuery('#main2').toggleClass('filterHide');
-			});
-		}
-		if (jQuery(window).width() < 991){
-			jQuery('.filter-btn').on('click', function(){
-				jQuery(this).toggleClass('active');
-				jQuery('.holder-filtros').slideToggle();
-				jQuery('#main2').toggleClass('filterHide');
-				// main2size();
-			});
-		}
-	}
-	filterClick();
-
-	if (jQuery( window ).width() < 991) {
-		jQuery('.filter-btn').trigger('click');
-	}
+	
 
 	/* Watch function */
 	jQuery( window ).resize(function(){
