@@ -21,7 +21,8 @@ module.exports = {
 		rules: [
 			{ test: /\.css$/, use: ['style-loader','css-loader'] },
 			{ test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
-			{ test: /\.(png|jpg|ttf|eot|svg)$/, loader: 'url-loader' }
+			{ test: /\.(png|jpg|ttf|eot|svg)$/, loader: 'url-loader' },
+			{ test: /\.less$/, use: [{loader: "style-loader"}, {loader: "css-loader"}, {loader: "less-loader"}] }
 		]
 	},
 

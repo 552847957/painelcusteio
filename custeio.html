@@ -65,9 +65,9 @@
             <li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
         </ul>
     </div>
-    <div id="all" class="home">
+    <div id="all" class="">
         <header id="header">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
@@ -169,7 +169,7 @@
             </div>
         </header>
         <nav class="navbar navbar-default">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -197,7 +197,12 @@
                 <div class="container-fluid no-gutters">
                     <div class="row" id="topContent">
                         <div class="page-header" style="margin-bottom: -1px;">
-                            <h2 style="padding-left: 8px; color: #1D70B7; letter-spacing: -1px; " id="tituloAba">Visão Geral</h2>
+                            <h2 style="padding-left: 8px; color: #2f2f2f; letter-spacing: -1px; " id="tituloAba">Visão Geral</h2>
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h1 role="heading" class="img-logo"></h1>
+                                </a>
+                            </div>
                         </div>
                         <div id="CurrentSelections" class="qvobjects" style="position:relative; top:0; left:0; width:100%; height:35px;"> </div>
                     </div>
@@ -313,12 +318,15 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
+                    
                 </div>
             </section>
+            
         </main>
         <footer id="footer" role="contentinfo">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="container-fluid ">
                     <div class="row">
                         <div class="col-xs-6">
@@ -353,7 +361,8 @@
     </div>
     <div class="backdrop"></div>
     <script language="JavaScript" src="dist/bundle.js "></script>
-    <script src="http://qliksense-qap-cginf.brazilsouth.cloudapp.azure.com/resources/assets/external/requirejs/require.js"></script>
+    <script src="./src/js/require.js"></script>
+    <script src="./src/js/tableexport.js"></script>
     <script src="./src/js/painelcusteio.js"></script>
     <script src="./src/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
