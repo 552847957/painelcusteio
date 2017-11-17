@@ -16,3 +16,8 @@ import './jquery.cookie.js';
 import {teste} from './page-loader';
 import {jq} from './default';
 
+
+var $ = jQuery.noConflict()
+$(document).ready(function() {
+
+})

@@ -128,9 +128,9 @@ export var jq = jQuery(function() {
     jQuery('.prevTab').click(function() {
         jQuery('.nav-tabs > .active').prev('li').find('a').trigger('click');
     });
-
-    if (jQuery('.home')) {
-    	console.log('entrei')
+    
+    if (jQuery('.home').length > 0) {
+        
         jQuery(window).scroll(function() {
             var scroll = jQuery(window).scrollTop();
             if (scroll <= jQuery('#passo').offset().top) {

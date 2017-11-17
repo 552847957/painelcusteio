@@ -184,8 +184,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="http://paineldeprecos.planejamento.gov.br/documentos/1.Manual.pdf" target="_blank">Manual do usuário</a></li>
-                        <li><a href="src/videos.html">Vídeos e Tutoriais</a></li>
-                        <li><a href="src/docs.html">Documentos de Apoio</a></li>
+                        <li><a href="./videos.html">Vídeos e Tutoriais</a></li>
+                        <li><a href="./docs.html">Documentos de Apoio</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -259,14 +259,23 @@
                                     </div>
                                     <!--end of tabs-->
                                     <div class="boxObject col-6 float-left clearfix" id="object1">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                            <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
+                                        </div>
                                         <div class="btnTable" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "EFXAAkr" }] }' title="Exportar Dados">
-                                            <span class="btnText">Exportar dados</span><i class="fa fa-table" aria-hidden="true"></i></div>
+                                            <span class="btnText">Exportar dados</span><i class="fa fa-table" aria-hidden="true"></i>
+                                        </div>
                                         <div class="btnExpand" html-get='{ "objects" : [{ "divID" : "objModal", "qlikID" : "EFXAAkr" }, { "divID" : "objModalLt", "qlikID" : "LfQRySG" }] }' data-toggle="modal" data-target=".objectModal1" title="Expandir Objeto">
-                                            <span class="btnText">Expandir objeto</span><i class="fa fa-expand" aria-hidden="true"></i></div>
+                                            <span class="btnText">Expandir objeto</span><i class="fa fa-expand" aria-hidden="true"></i>
+                                        </div>
+                                        
                                         <div id="obj1" class="qvobject col-12"></div>
                                         <div id="gastoTotalItem" class="qvobject col-12 qvltobject"></div>
                                     </div>
                                     <div class="boxObject col-6 float-left clearfix gastoTotal" id="object2" div-hide="gastoTotalPer">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                            <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
+                                        </div>
                                         <div class="btnTable" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "McjaJj" }] }' title="Exportar Dados">
                                             <span class="btnText">Exportar dados</span><i class="fa fa-table" aria-hidden="true"></i></div>
                                         <div class="btnExpand" html-get='{ "objects" : [{ "divID" : "objModal", "qlikID" : "McjaJj" }, { "divID" : "objModalLt", "qlikID" : "LfQRySG" }] }' data-toggle="modal" data-target=".objectModal1" title="Expandir Objeto">
@@ -275,6 +284,9 @@
                                         <div id="gastoTotalItem2" class="qvobject col-12 qvltobject"></div>
                                     </div>
                                     <div class="boxObject col-6 float-left clearfix changeGraph" id="object5">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                            <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
+                                        </div>
                                         <div class="btnTable" title="Exportar Dados" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "bZGjQj" }] }' data-toggle="table" data-target=".objectTable">
                                             <span class="btnText">Exportar dados</span><i class="fa fa-table" aria-hidden="true"></i></div>
                                         <div class="btnExpand" title="Expandir Objeto" html-get='{ "objects" : [{ "divID" : "objModal", "qlikID" : "bZGjQj" }] }' data-toggle="modal" data-target=".objectModal1">
@@ -283,6 +295,9 @@
                                         <div id="gastoTotalItem4" class="qvobject col-12 qvltobject"></div>
                                     </div>
                                     <div class="boxObject col-6 float-left clearfix changeGraph" id="object6">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                            <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
+                                        </div>
                                         <div class="btnTable" title="Exportar Dados" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "gEmkJc" }] }' data-toggle="table" data-target=".objectTable">
                                             <span class="btnText">Exportar dados</span><i class="fa fa-table" aria-hidden="true"></i></div>
                                         <div class="btnExpand" title="Expandir Objeto" html-get='{ "objects" : [{ "divID" : "objModal", "qlikID" : "gEmkJc" }] }' data-toggle="modal" data-target=".objectModal1">
@@ -291,6 +306,9 @@
                                         <div id="gastoTotalItem5" class="qvobject col-12 qvltobject"></div>
                                     </div>
                                     <div class="boxObject col-6 float-left clearfix gastoTotalPer changeGraph" id="object3" div-hide="gastoTotal">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                            <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
+                                        </div>
                                         <div class="btnTable" title="Exportar Dados" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "BWpqhjD" }] }' data-toggle="table" data-target=".objectTable">
                                             <span class="btnText">Exportar dados</span><i class="fa fa-table" aria-hidden="true"></i></div>
                                         <div class="btnExpand" title="Expandir Objeto" html-get='{ "objects" : [{ "divID" : "objModal", "qlikID" : "BWpqhjD" }, { "divID" : "objModalLt", "qlikID" : "LfQRySG" }] }' data-toggle="modal" data-target=".objectModal1">
@@ -299,6 +317,9 @@
                                         <div id="gastoTotalItem3" class="qvobject col-12 qvltobject"></div>
                                     </div>
                                     <div class="boxObject col-6 float-left clearfix" id="object4">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                            <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
+                                        </div>
                                         <div class="btnTable" title="Exportar Dados" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "ZTDL" }] }' data-toggle="table" data-target=".objectTable">
                                             <span class="btnText">Exportar dados</span><i class="fa fa-table" aria-hidden="true"></i></div>
                                         <div class="btnExpand" title="Expandir Objeto" html-get='{ "objects" : [{ "divID" : "objModal", "qlikID" : "ZTDL" }] }' data-toggle="modal" data-target=".objectModal1">

@@ -332,9 +332,26 @@ require(["js/qlik"], function(qlik) {
 
         $('.btnDexpand').click(function(){
             $('.myModal').removeClass('modalShow');
+            $('.myModal').removeClass('modalInfo');
             $('.backdrop').removeClass('show');
             $('body').removeClass('modal-open');
-           
+        });
+
+        $('.btnInfo').click(function() {
+            $('#objModalLt').hide();
+            windowHeight = $(window).height();
+            expandHeight = (85 * windowHeight) / 100;
+            $('.qvgdobject').css("height", expandHeight + "px");
+            $('.myModal').addClass('modalShow modalInfo');
+            $('.backdrop').addClass('show');
+            $('#objModalLt').hide();
+            passo = '<div class="info-box"><span class="titulo"></i>Gastos por item de despesa</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
+            passo += '<div class="info-box"><span class="titulo"></i>Gastos por subelemento de despesa</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
+            passo += '<div class="info-box"><span class="titulo"></i>Gastos por área de atuação do órgão superior</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
+            passo += '<div class="info-box"><span class="titulo"></i>Gastos por classificação da unidade orçamentária</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
+            passo += '<div class="info-box"><span class="titulo"></i>Gastos por órgão superior</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
+            passo += '<div class="info-box"><span class="titulo"></i>Gastos por órgão superior (ordenado pelo total)</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
+            $('#objModal').html(passo);      
         });
 
         //transformar html gerado dos graficos em excel

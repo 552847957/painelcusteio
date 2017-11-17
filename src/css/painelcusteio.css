@@ -1,6 +1,21 @@
 * {
     outline: none
 }
+body,
+    html,
+    p,
+    a,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    b,
+    li {
+        font-family: 'Raleway', sans-serif;
+    }
 body.modal-open {
     overflow: hidden !important;
 }
@@ -174,10 +189,10 @@ header .row-fluid{
     -webkit-box-shadow: 0 0 6px 1px rgba(250,208,42,0.7);
     box-shadow: 0 0 6px 1px rgba(250,208,42,0.7);
 }
-.boxObject:hover .btnExpand, .boxObject:hover .btnTable{
+.boxObject:hover .btnExpand, .boxObject:hover .btnTable, .boxObject:hover .btnInfo{
     opacity: 1;
 }
-.btnExpand, .btnTable, .btnDexpand {
+.btnExpand, .btnTable, .btnInfo, .btnDexpand{
     overflow: hidden;
     position: absolute;
      right: 28px;
@@ -199,6 +214,10 @@ header .row-fluid{
     font-size: 21px;
     height: 40px;
 }
+.btnInfo{
+    right: 128px;
+    font-size: 20px;
+}
 .btnExpand i, .btnDexpand i{
     position: absolute;
     top: 13px;
@@ -209,7 +228,12 @@ header .row-fluid{
     top: 12px;
     right: 11px
 }
-.boxObject .btnExpand, .boxObject .btnTable{
+.btnInfo i{
+    position: absolute;
+    top: 12px;
+    right: 16px
+}
+.boxObject .btnExpand, .boxObject .btnTable, .boxObject .btnInfo{
     opacity: 0
 }
 .modal{
@@ -221,13 +245,13 @@ header .row-fluid{
 .modal-backdrop{
     z-index: 1001 !important; 
 }
-.btnExpand:hover, .btnTable:hover, .btnDexpand:hover {
+.btnExpand:hover, .btnTable:hover, .btnDexpand:hover, .btnInfo:hover{
     background-color: #1D70B7;
     color: #fff;
     width: 214px;
 }
 
-.btnExpand:hover .btnText, .btnTable:hover .btnText, .btnDexpand:hover .btnText{
+.btnExpand:hover .btnText, .btnTable:hover .btnText, .btnDexpand:hover .btnText, .btnInfo:hover .btnText{
     display: block;
     float: left;
     width: calc(100% - 36px);
@@ -243,6 +267,22 @@ header .row-fluid{
     left: 0;
     right: 0;
     margin: 0 auto;
+}
+.myModal.modalInfo{
+    width: 50% !important;
+}
+.modalInfo .info-box{
+    padding: 10px;
+}
+.modalInfo #objModal{
+    overflow-y: scroll;
+}
+.modalInfo .info-box .titulo{
+    font-size: 22px;
+    font-weight: 600;
+}
+.modalInfo .info-box p{
+    width: calc(100% - 42px);
 }
 .myModal .modal-content{
     min-height: 600px;
