@@ -191,89 +191,54 @@
             <!-- /.container-fluid -->
         </nav>
         <main id="main" role="main">
-            <section role=region id="docs-int">
+            <section role="region" id="perguntas">
                 <div class="container">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <button role="button" class="btnBack" onclick="history.go(-1);">
+                            <div class="col-xs-12 text-center">
+                                <button class="btnBack" onclick="history.go(-1);">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="512" version="1" viewBox="0 0 512 512" width="512" xml:space="preserve"><path d="M323 128L423 233c6 6 9 14 9 22 0 9-3 17-9 22L323 384c-12 13-31 13-43 0 -12-12-12-33 0-45l48-50h-217C94 288 80 274 80 256c0-18 14-32 31-32h217l-48-50c-12-12-12-33 0-45C291 116 311 116 323 128z"></path></svg>
                                     voltar
                                 </button>
-                                <h2 role="heading">Documentos</h2>
+                                <h2 role="heading">Perguntas Frequentes</h2>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="pag1">
-                                    <div class="col-sm-6">
-                                        <div class="holder-docs">
-                                            <a href="http://paineldeprecos.planejamento.gov.br/documentos/1.Manual.pdf" class="icon-doc">
-                                                <span class="img-doc"></span>
-                                            </a>
-                                            <span class="title-doc">Manual</span>
-                                            <p class="text">Faça o download do manual do Painel de Custeio.</p>
+                            <div class="col-xs-12">
+                                <div class="holder-collapse">
+                                    <div class="panel-group" id="accordion">
+                                        
+                                        <div class="panel panel-default">
+                                            <div class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                    O que é “pesquisa de preços”?
+                                                    <span class="plus"></span>
+                                                </a>
+                                            </div>
+                                            <div id="collapse1" class="panel-collapse collapse">
+                                                <div>
+                                                    A pesquisa de preços consiste em procedimento prévio e indispensável para a verificação de existência de recursos suficientes para cobrir despesas decorrentes de contratação pública.  Serve de base também para confronto e exame de propostas em licitação.
+                                                </div>
+                                            </div>
                                         </div>
+                                        
+                                        <div class="panel panel-default">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                        O que é preço de referência?
+                                                        <span class="plus"></span>
+                                                    </a>
+                                                </div>
+                                            <div id="collapse2" class="panel-collapse collapse">
+                                                <div>
+                                                    Preço de referência é o maior valor aceitável para a aquisição/contratação.
+                                                </div>
+                                            </div>
+                                        </div>    
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="holder-docs">
-                                            <a href="http://www.planejamento.gov.br/assuntos/orcamento-1/legislacao/legislacao/portaria-interm-163_2001_atualizada_2015_04jul2016_ultima-alteracao-2016-2.docx/view" class="icon-doc">
-                                                <span class="img-doc"></span>
-                                            </a>
-                                            <span class="title-doc">Portaria Interministerial  STN/SOF Nº 163</span>
-                                            <p class="text">Faça download do Guia de Orientação sobre a IN 05/2014.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="holder-docs">
-                                            <a href="https://www1.siop.planejamento.gov.br/siopdoc/lib/exe/fetch.php/acesso_publico:mto_atual.pdf" class="icon-doc">
-                                                <span class="img-doc"></span>
-                                            </a>
-                                            <span class="title-doc">MTO - Manual Técnico de Orçamento SOF/MP</span>
-                                            <p class="text">Faça o download da IN5/2014 - Dispõe sobre os procedimentos administrativos básicos para a realização de pesquisa de preços para a aquisição de bens e contratação de serviços em geral.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="holder-docs">
-                                            <a href="https://esic.cgu.gov.br/sistema/site/index.aspx" class="icon-doc">
-                                                <span class="img-doc"></span>
-                                            </a>
-                                            <span class="title-doc">e-SIC - Sistema Eletrônico do Serviço de Informação ao Cidadão</span>
-                                            <p class="text">Faça o download da IN3/2017 – Altera a IN 5/2014.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="holder-docs">
-                                            <a href="http://dados.gov.br/" class="icon-doc">
-                                                <span class="img-doc"></span>
-                                            </a>
-                                            <span class="title-doc">Dados Abertos</span>
-                                            <p class="text">Faça o download da IN3/2017 – Altera a IN 5/2014.</p>
-                                        </div>
-                                    </div>                                  
                                 </div>
                             </div>
                         </div>
-<!--                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <div class="paginacao" role="navigation">
-                                    <a class="prevTab">Anterior</a>
-                                        
-                                        <ul class="nav nav-tabs numbers" role="tablist">
-                                            <li role="presentation" class="active">
-                                                <a href="#pag1" aria-controls="pag1" role="tab" data-toggle="tab" class="pag-n">1</a>
-                                            </li>
-                                            <li role="presentation">
-                                                <a href="#pag2" aria-controls="pag2" role="tab" data-toggle="tab" class="pag-n">2</a>
-                                            </li>
-                                            <li role="presentation">
-                                                <a href="#pag3" aria-controls="pag3" role="tab" data-toggle="tab" class="pag-n">3</a>
-                                            </li>
-                                        </ul>
-                                    <a class="nextTab active">Próxima</a>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </section>

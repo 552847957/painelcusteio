@@ -11,7 +11,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-
+.accessibility *{
+    color: #FFF !important
+}
+.accessibility .ministerio{
+    display: none !important;
+}
 /* The alert message box */
 
 .alert {
@@ -143,9 +148,10 @@ body.phpcontato {
 
 .logo .img-logo {
     background: url('../img/logo.png') no-repeat;
-    height: 67px;
-    width: 182px;
+    height: 59px;
+    width: 105px;
     margin: 0;
+    background-size: contain;
 }
 
 .logo .bar {
@@ -1032,9 +1038,12 @@ a.all-videos {
     margin: 40px 0 0;
     background: #F0F0F0;
 }
-
+#perguntas h2{
+    margin: 33px 0
+}
 #docs-int h2,
-#videos-int h2 {
+#videos-int h2,
+#perguntas h2 {
     text-transform: uppercase;
     letter-spacing: -1px;
     line-height: 32px;
@@ -1279,7 +1288,7 @@ a.all-videos {
 #perguntas .panel-title a {
     font-size: 18px;
     font-weight: bold;
-    color: #1C67A1;
+    color: #2f2f2f;
     position: relative;
     padding: 35px 0px;
     width: 100%;
@@ -1293,7 +1302,7 @@ a.all-videos {
 
 #perguntas .panel-title {
     border-width: 0px 0px 1px 0px !important;
-    border-color: #1C67A1;
+    border-color: #2f2f2f;
     border-style: solid;
     text-decoration: none;
     position: relative;
@@ -1670,7 +1679,6 @@ a.all-videos {
 .accessibility .filter-btn.active,
 .accessibility .paginacao .pag-n,
 .accessibility .holder-filtros,
-.accessibility .qv-object,
 .accessibility #footer,
 .accessibility .graph {
     background: #222;
@@ -2338,7 +2346,8 @@ a.all-videos {
     }
 
     #docs-int h2,
-    #videos-int h2 {
+    #videos-int h2,
+     {
         line-height: 38px;
         font-size: 24px;
     }
