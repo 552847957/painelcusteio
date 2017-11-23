@@ -28,6 +28,12 @@ h3 {
         }
     }
     .analise {
+        position: absolute;
+        right: 20px;
+        transition: all 0.5s;
+        &.acessar-painel{
+            top: 410px;
+        }
         @media (min-width: 990px){
             width: 424px;
         }
@@ -37,9 +43,24 @@ h3 {
                 display: none;
             }
         }
-
-        position: relative;
-        top: -65px;
+        &.fixed{
+            position: fixed !important;
+            right: 20px;
+            width: 289px !important;
+            z-index: 9999;
+            i{
+                display: none;
+            }
+            h4{
+                font-size: 56px !important;
+            }
+            &.como-usar{
+                top: 60px !important;
+            }
+            &.acessar-painel{
+                top: 167px !important;
+            }
+        }
         a {
             width: 100%;
             position: relative;
@@ -71,6 +92,7 @@ h3 {
         }
     }
     .bem-vindo {
+        position: relative;
         padding: 36px 20px;
         background-color: #f7c514;
         background-image: url('../img/data-analytics-too-much-data.png');

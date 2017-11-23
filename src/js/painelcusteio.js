@@ -65,6 +65,7 @@ require(["js/qlik"], function(qlik) {
 
         //fixar menu lateral e barra de titulo
         $(window).scroll(function(event) {
+            console.log('to aqui')
             var scroll = $(window).scrollTop();
             if (scroll >= 202) {
                 $('#topContent, .filter-btn, .holder-filtros').addClass('fixed');

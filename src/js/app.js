@@ -1,4 +1,3 @@
-import '../css/public.less';
 import '../css/painelcusteio.css';
 import '../css/bootstrap.css';
 import '../css/style.css';
@@ -31,7 +30,17 @@ $(document).ready(function() {
 
     function getGrafInfo(id) {
         var htmlPasso = '<div class="info-box"><span class="titulo">' +descs[id].title+ '</span><br/><p>' +descs[id].text+ '</p></div>';
-       return htmlPasso;
-       
+       return htmlPasso;     
     }
+
+    $(window).scroll(function(event) {
+        var scroll = $(window).scrollTop();
+        console.log(scroll);
+        if (scroll >= 413) {
+            $('.analise').addClass('fixed');
+        } else {
+            $('.analise').removeClass('fixed');
+        }
+    });
+    
 })
