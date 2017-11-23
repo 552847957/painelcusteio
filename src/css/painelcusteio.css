@@ -280,6 +280,8 @@ header .row-fluid{
 .modalInfo .info-box .titulo{
     font-size: 30px;
     font-weight: 600;
+    width: calc(100% - 65px);
+    display: block;
 }
 .modalInfo .info-box p{
     width: calc(100% - 42px);
