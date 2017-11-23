@@ -275,14 +275,26 @@ header .row-fluid{
     padding: 10px;
 }
 .modalInfo #objModal{
-    overflow-y: scroll;
+    height: inherit !important;
 }
 .modalInfo .info-box .titulo{
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 600;
 }
 .modalInfo .info-box p{
     width: calc(100% - 42px);
+    font-size: 18px;
+}
+.modalInfo.modalShow{
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    bottom: 0;
+    margin-top: -14%;
+}
+.modalInfo .modal-content{
+    min-height: inherit !important;
 }
 .myModal .modal-content{
     min-height: 600px;

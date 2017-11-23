@@ -1,10 +1,3 @@
-/*
- * Basic responsive mashup template
- * @owner Enter you name here (xxx)
- */
-/*
- *    Fill in host and port for Qlik engine
- */
 var prefix = '/';
 var config = {
     host: "paineldecusteio.planejamento.gov.br",
@@ -44,6 +37,7 @@ require(["js/qlik"], function(qlik) {
     app.visualization.get('evtEsp').then(function(vis) { vis.show('orgao-nome') });
     app.visualization.get('VDpFpjQ').then(function(vis) { vis.show('uo'); });
     app.visualization.get('RUBrQmG').then(function(vis) { vis.show('item-despesa'); });
+    app.visualization.get('de3ddead-865c-446d-95dd-70e80bda2200').then(function(vis) { vis.show('sub-item-despesa'); });
     app.visualization.get('6a5d2a61-ce90-4f1e-a0ef-292b5ea25764').then(function(vis) { vis.show('area-atuacao'); });
     app.visualization.get('3546daed-0ef8-4da1-a80e-c937df588d78').then(function(vis) { vis.show('classificacao'); });
     //fim menu filtros
@@ -238,6 +232,7 @@ require(["js/qlik"], function(qlik) {
                 index++;
                 nameObj = 'obj' + index;
                 if (idQlikLabel) {
+
                     $('#' + nameObj).prev().attr('html-get', '{ "objects" : [{ "divID" : "objModal", "qlikID" : "' + idObject + '" }, { "divID" : "objModalLt", "qlikID" : "' + idQlikLabel + '" }] }');
                     $('#' + nameObj).prev().prev().attr('html-get', '{ "object" : [{ "divID" : "objTable", "qlikID" : "' + idObject + '" }] }');
                 } else {
@@ -255,6 +250,10 @@ require(["js/qlik"], function(qlik) {
             idQlikLabel = '';
             switch (nextBox) {
                 case 'box1':
+                    $('.boxObject').each(function(index, el) {
+                        objID = $(this).attr('id').substring(6, 7);
+                        $(this).children(0).attr('graf-id', 'p1_' + objID);
+                    });
                     $('.btnVoltar').attr('next-box', 'box1').attr('this-box', 'box1');
                     $('.btnAvancar').attr('next-box', 'box2').attr('this-box', 'box1');
                     idQlikLabel = 'LfQRySG';
@@ -262,18 +261,30 @@ require(["js/qlik"], function(qlik) {
                     tituloAba = 'Visão Geral';
                     break;
                 case 'box2':
+                    $('.boxObject').each(function(index, el) {
+                        objID = $(this).attr('id').substring(6, 7);
+                        $(this).children(0).attr('graf-id', 'p2_' + objID);
+                    });
                     $('.btnVoltar').attr('next-box', 'box1').attr('this-box', 'box2');
                     $('.btnAvancar').attr('next-box', 'box3').attr('this-box', 'box2');
                     idsQlik = ['XrJeB', 'ZTDL', 'HtRcxn', 'TPFGmm'];
                     tituloAba = 'Análise de Custeio por Órgão';
                     break;
                 case 'box3':
+                    $('.boxObject').each(function(index, el) {
+                        objID = $(this).attr('id').substring(6, 7);
+                        $(this).children(0).attr('graf-id', 'p3_' + objID);
+                    });
                     $('.btnVoltar').attr('next-box', 'box2').attr('this-box', 'box3');
                     $('.btnAvancar').attr('next-box', 'box4').attr('this-box', 'box3');
                     idsQlik = ['3db78cf5-1309-47fd-a370-c729be77ee25', 'ptcJuP', 'f8e60a8e-623b-4ee9-a30f-d588ebb463ee', '88b32ef2-492a-4621-b8df-c5e6351f2546'];
                     tituloAba = 'Análise de Custeio por Unidade Orçamentária';
                     break;
                 case 'box4':
+                    $('.boxObject').each(function(index, el) {
+                        objID = $(this).attr('id').substring(6, 7);
+                        $(this).children(0).attr('graf-id', 'p4_' + objID);
+                    });
                     $('.btnVoltar').attr('next-box', 'box3').attr('this-box', 'box4');
                     $('.btnAvancar').attr('next-box', 'box4').attr('this-box', 'box4');
                     idsQlik = ['YJTz', 'LxWyDxE', 'ZYrqpJ'];
@@ -337,22 +348,7 @@ require(["js/qlik"], function(qlik) {
             $('body').removeClass('modal-open');
         });
 
-        $('.btnInfo').click(function() {
-            $('#objModalLt').hide();
-            windowHeight = $(window).height();
-            expandHeight = (85 * windowHeight) / 100;
-            $('.qvgdobject').css("height", expandHeight + "px");
-            $('.myModal').addClass('modalShow modalInfo');
-            $('.backdrop').addClass('show');
-            $('#objModalLt').hide();
-            passo = '<div class="info-box"><span class="titulo"></i>Gastos por item de despesa</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
-            passo += '<div class="info-box"><span class="titulo"></i>Gastos por subelemento de despesa</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
-            passo += '<div class="info-box"><span class="titulo"></i>Gastos por área de atuação do órgão superior</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
-            passo += '<div class="info-box"><span class="titulo"></i>Gastos por classificação da unidade orçamentária</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
-            passo += '<div class="info-box"><span class="titulo"></i>Gastos por órgão superior</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
-            passo += '<div class="info-box"><span class="titulo"></i>Gastos por órgão superior (ordenado pelo total)</span><br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus eleifend nunc, ut ultricies diam interdum at. Maecenas tincidunt rutrum est efficitur laoreet. Nulla maximus sit amet nisl vitae pharetra. Vestibulum nec tincidunt mi, fringilla rutrum nisl. Aliquam lobortis erat nec sem ultrices laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis condimentum lacus. Donec tincidunt molestie lorem eget feugiat. Quisque euismod consectetur ante, ut fermentum lacus pharetra vitae.</p></div>';
-            $('#objModal').html(passo);      
-        });
+        
 
         //transformar html gerado dos graficos em excel
         function tableToExcel(tab_text, fileTitle) {

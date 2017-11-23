@@ -184,7 +184,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="./index.html">Principal</a></li>
-                        <li><a href="http://paineldeprecos.planejamento.gov.br/documentos/1.Manual.pdf" target="_blank">Manual do usuário</a></li>
+                        <li><a href="./src/docs/manual.pdf" target="_blank">Manual do usuário</a></li>
                         <li><a href="./videos.html">Vídeos e Tutoriais</a></li>
                         <li><a href="./docs.html">Documentos de Apoio</a></li>
                     </ul>
@@ -217,11 +217,14 @@
                                 <li class="nav-item">
                                 <div id="periodo-ano" class="nav-qvobject"></div>
                             </li>
-                                <li class="nav-item">
+                            <li class="nav-item">
                                 <div id="periodo-ano-mes" class="nav-qvobject"></div>
                             </li>
-                                <li class="nav-item">
+                            <li class="nav-item">
                                 <div id="item-despesa" class="nav-qvobject"></div>
+                            </li>
+                            <li class="nav-item">
+                                <div id="sub-item-despesa" class="nav-qvobject"></div>
                             </li>
                                 <li class="nav-item">
                                 <div id="area-atuacao" class="nav-qvobject"></div>
@@ -260,7 +263,7 @@
                                     </div>
                                     <!--end of tabs-->
                                     <div class="boxObject col-6 float-left clearfix" id="object1">
-                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações" graf-id="p1_1">
                                             <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
                                         </div>
                                         <div class="btnTable" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "EFXAAkr" }] }' title="Exportar Dados">
@@ -274,7 +277,7 @@
                                         <div id="gastoTotalItem" class="qvobject col-12 qvltobject"></div>
                                     </div>
                                     <div class="boxObject col-6 float-left clearfix gastoTotal" id="object2" div-hide="gastoTotalPer">
-                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações" graf-id="p1_2">
                                             <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
                                         </div>
                                         <div class="btnTable" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "McjaJj" }] }' title="Exportar Dados">
@@ -285,7 +288,7 @@
                                         <div id="gastoTotalItem2" class="qvobject col-12 qvltobject"></div>
                                     </div>
                                     <div class="boxObject col-6 float-left clearfix changeGraph" id="object5">
-                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações" graf-id="p1_5">
                                             <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
                                         </div>
                                         <div class="btnTable" title="Exportar Dados" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "bZGjQj" }] }' data-toggle="table" data-target=".objectTable">
@@ -296,7 +299,7 @@
                                         <div id="gastoTotalItem4" class="qvobject col-12 qvltobject"></div>
                                     </div>
                                     <div class="boxObject col-6 float-left clearfix changeGraph" id="object6">
-                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações" graf-id="p1_6">
                                             <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
                                         </div>
                                         <div class="btnTable" title="Exportar Dados" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "gEmkJc" }] }' data-toggle="table" data-target=".objectTable">
@@ -307,7 +310,7 @@
                                         <div id="gastoTotalItem5" class="qvobject col-12 qvltobject"></div>
                                     </div>
                                     <div class="boxObject col-6 float-left clearfix gastoTotalPer changeGraph" id="object3" div-hide="gastoTotal">
-                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações" graf-id="p1_3">
                                             <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
                                         </div>
                                         <div class="btnTable" title="Exportar Dados" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "BWpqhjD" }] }' data-toggle="table" data-target=".objectTable">
@@ -318,7 +321,7 @@
                                         <div id="gastoTotalItem3" class="qvobject col-12 qvltobject"></div>
                                     </div>
                                     <div class="boxObject col-6 float-left clearfix" id="object4">
-                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações">
+                                        <div class="btnInfo" data-toggle="modal" data-target=".objectModal1" title="Informações" graf-id="p1_4">
                                             <span class="btnText">Informações</span><i class="fa fa-question" aria-hidden="true"></i>
                                         </div>
                                         <div class="btnTable" title="Exportar Dados" html-get='{ "object" : [{ "divID" : "objTable", "qlikID" : "ZTDL" }] }' data-toggle="table" data-target=".objectTable">
