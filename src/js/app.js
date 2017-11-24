@@ -12,7 +12,7 @@ import './swiper.jquery.min.js';
 import './jquery.cookie.js';
 
 import { jq } from './default';
-import {descs} from './graphDesc';
+import { descs } from './graphDesc';
 
 var $ = jQuery.noConflict()
 $(document).ready(function() {
