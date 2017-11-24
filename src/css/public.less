@@ -2,7 +2,63 @@ h2,
 h3 {
     margin: 0;
 }
-
+@media (max-width: 320px){
+    .logo{
+        .img-logo{
+            width: 90px !important;
+        }
+    }
+    .home{
+        .bem-vindo{
+            .titulo{
+                h2{
+                    font-size: 3em !important;
+                }
+                h3{
+                    font-size: 2em !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .home{
+        .passos{
+            h4{
+                font-size: 4vw !important;
+            }
+        }
+        .bem-vindo{
+            .titulo{
+                width: 100% !important;
+            }
+            .complemento{
+                width: 100% !important;
+            }
+        }
+        .analise{
+            opacity: 0;
+            position: fixed !important;
+            right: 0px !important;
+            width: 197px !important;
+            z-index: 9999;
+            &.fixed{
+                opacity: 1;
+            }
+            h4{
+                font-size: 34px !important;
+            }
+            &.como-usar{
+                top: inherit !important;
+                bottom: 89px !important;
+            }
+            &.acessar-painel{
+                top: inherit !important;
+                bottom: 0 !important;
+            }
+        }
+    }
+}
 .home {
     body,
     html,
@@ -46,19 +102,24 @@ h3 {
         &.fixed{
             position: fixed !important;
             right: 20px;
-            width: 289px !important;
+            width: 289px;
             z-index: 9999;
             i{
                 display: none;
             }
-            h4{
-                font-size: 56px !important;
+            a{
+                .texto{
+                    h4{
+                        font-size: 56px ;
+                    }
+                }
             }
+            
             &.como-usar{
-                top: 60px !important;
+                top: 60px;
             }
             &.acessar-painel{
-                top: 167px !important;
+                top: 167px;
             }
         }
         a {

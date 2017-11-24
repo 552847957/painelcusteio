@@ -1,4 +1,5 @@
 import '../css/painelcusteio.css';
+import '../css/public.less';
 import '../css/bootstrap.css';
 import '../css/style.css';
 import '../css/font-awesome.css';
@@ -35,7 +36,6 @@ $(document).ready(function() {
 
     $(window).scroll(function(event) {
         var scroll = $(window).scrollTop();
-        console.log(scroll);
         if (scroll >= 413) {
             $('.analise').addClass('fixed');
         } else {

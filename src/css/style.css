@@ -1771,11 +1771,6 @@ a.all-videos {
         content: "";
     }
 
-    .filter-btn:before {
-        content: "Ocultar Filtros";
-        font-size: 14px;
-    }
-
     .filter-btn.active:before {
         content: "Expandir Filtros";
     }
@@ -2463,6 +2458,9 @@ a.all-videos {
 }
 
 @media (max-width: 400px) {
+    .ellips-text span{
+        font-size: 35px !important;
+    }
     #wellcome .swiper-container {
         top: 0;
     }
@@ -2542,7 +2540,7 @@ a.all-videos {
     }
     .logo .img-logo {
         height: 54px;
-        width: 182px;
+        width: 90px !important;
         background-size: 100%;
     }
     .ministerio {
