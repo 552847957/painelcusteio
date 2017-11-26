@@ -2,67 +2,94 @@ h2,
 h3 {
     margin: 0;
 }
-@media (max-width: 320px){
+.navbar-default{
+    -webkit-box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.1);
+    box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.1);
+    z-index: 1;
+}
+#header{
+    background-color: #f7c514 !important;
+    #menu-top, #menu-contato{
+        a{
+            color: #2f2f2f !important;
+        }
+        .bar{
+            background-color: #2f2f2f;
+        }
+    }
     .logo{
-        .img-logo{
+        .bar{
+            background-color: #2f2f2f
+        }
+    }
+}
+
+html, body{
+    overflow-x: hidden;
+}
+@media (max-width: 320px) {
+    .logo {
+        .img-logo {
             width: 90px !important;
         }
     }
-    .home{
-        .bem-vindo{
-            .titulo{
-                h2{
+    .home {
+        .bem-vindo {
+            .titulo {
+                h2 {
                     font-size: 3em !important;
                 }
-                h3{
+                h3 {
                     font-size: 2em !important;
                 }
             }
         }
     }
 }
-@media (max-width: 768px){
-    .home{
-        .passos{
-            h4{
+
+@media (max-width: 768px) {
+    .home {
+        .passos {
+            h4 {
                 font-size: 4vw !important;
             }
         }
-        .bem-vindo{
-            .titulo{
+        .bem-vindo {
+            .titulo {
                 width: 100% !important;
             }
-            .complemento{
+            .complemento {
                 width: 100% !important;
             }
         }
-        .analise{
+        .analise {
             opacity: 0;
             position: fixed !important;
             right: 0px !important;
             width: 197px !important;
             z-index: 9999;
-            &.fixed{
+            &.fixed {
                 opacity: 1;
             }
-            h4{
+            h4 {
                 font-size: 34px !important;
             }
-            &.como-usar{
+            &.como-usar {
                 top: inherit !important;
                 bottom: 178px !important;
             }
-            &.acessar-painel{
+            &.acessar-painel {
                 top: inherit !important;
                 bottom: 0 !important;
             }
-            &.ver-video{
+            &.ver-video {
                 top: inherit !important;
                 bottom: 89px !important;
             }
         }
     }
 }
+
 .home {
     body,
     html,
@@ -91,47 +118,47 @@ h3 {
         position: absolute;
         right: 20px;
         transition: all 0.5s;
-        &.como-usar{
+        &.como-usar {
             top: 204px;
         }
-        &.ver-video{
+        &.ver-video {
             top: 329px;
         }
-        &.acessar-painel{
+        &.acessar-painel {
             top: 458px;
         }
-        @media (min-width: 990px){
+        @media (min-width: 990px) {
             width: 424px;
         }
-        @media (max-width: 989px){
+        @media (max-width: 989px) {
             width: 45%;
-            i{
+            i {
                 display: none;
             }
         }
-        &.fixed{
+        &.fixed {
             position: fixed !important;
             right: 20px;
             width: 289px;
             z-index: 9999;
-            i{
+            i {
                 display: none;
             }
-            a{
-                .texto{
-                    h4{
-                        font-size: 56px ;
+            a {
+                .texto {
+                    h4 {
+                        font-size: 56px;
                     }
                 }
             }
-            
-            &.como-usar{
+
+            &.como-usar {
                 top: 80px;
             }
-            &.ver-video{
+            &.ver-video {
                 top: 177px
             }
-            &.acessar-painel{
+            &.acessar-painel {
                 top: 274px;
             }
         }
@@ -168,8 +195,10 @@ h3 {
     .bem-vindo {
         position: relative;
         padding: 66px 20px;
-        background-color: #f7c514;
-        background-image: url('../img/data-analytics-too-much-data.png');
+        background-color: #fafafa;
+        // -webkit-box-shadow: 1px 5px 15px 0 rgba(0,0,0,0.1);
+        // box-shadow: 1px 5px 15px 0 rgba(0,0,0,0.1);
+        // background-image: url('../img/data-analytics-too-much-data2.png');
         background-size: cover;
         .titulo {
             width: 723px;
@@ -194,13 +223,15 @@ h3 {
             margin-top: 30px;
         }
         .analise {
-            a{
-                -webkit-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.4);
-                box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.4);
-                &:hover{
-                    div, i{
+            a {
+                -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+                box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+                &:hover {
+                    div,
+                    i {
                         color: #fff;
-                        span, h4{
+                        span,
+                        h4 {
                             color: #fff !important;
                         }
                     }
@@ -209,7 +240,7 @@ h3 {
         }
     }
     .passo {
-        padding: 85px 20px;
+        padding: 60px 20px;
         .titulo {
             h2 {
                 font-size: 60px;
@@ -297,7 +328,7 @@ h3 {
             float: left;
             clear: both
         }
-        .video{
+        .video {
             margin-right: 20px;
             margin-top: 20px;
         }
