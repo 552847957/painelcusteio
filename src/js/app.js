@@ -1,9 +1,9 @@
-import '../css/painelcusteio.css';
-import '../css/public.less';
-import '../css/bootstrap.css';
-import '../css/style.css';
-import '../css/font-awesome.css';
-import '../css/swiper.css';
+// import '../css/painelcusteio.css';
+// import '../css/public.less';
+// import '../css/bootstrap.css';
+// import '../css/style.css';
+// import '../css/font-awesome.css';
+// import '../css/swiper.css';
 
 
 import './barra.js';
