@@ -1372,6 +1372,8 @@ a.all-videos {
 
 .panel-collapse div {
     padding: 10px;
+    font-weight: 400;
+    color: #6a6a6a
 }
 
 .hide-filter .filter-btn,
