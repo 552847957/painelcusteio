@@ -1,5 +1,5 @@
 // import '../css/painelcusteio.css';
-// import '../css/public.less';
+import '../css/public.less';
 // import '../css/bootstrap.css';
 // import '../css/style.css';
 // import '../css/font-awesome.css';

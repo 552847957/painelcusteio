@@ -645,7 +645,14 @@ body.phpcontato {
     line-height: 30px;
     margin-bottom: 30px;
 }
-
+@media (min-width: 810px){
+    .home #acessar .video{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 31px auto !important; 
+    }
+}
 .video {
     box-shadow: 0 1px 4px 0 rgba(215, 215, 215, 0.50);
     background: #FFFFFF;
@@ -655,6 +662,8 @@ body.phpcontato {
     overflow: hidden;
     max-height: 320px;
     max-width: 380px;
+
+    
 }
 
 #videos-int .video {
