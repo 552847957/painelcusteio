@@ -1400,12 +1400,12 @@ a.all-videos {
     margin-bottom: 14px;
 }
 
-.acessibilidade p:first-child {
-    color: #666;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
+// .acessibilidade p:first-child {
+//     color: #666;
+//     font-size: 16px;
+//     font-weight: bold;
+//     margin-bottom: 20px;
+// }
 
 .mapasite li,
 .acessibilidade li {
