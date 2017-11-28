@@ -16,7 +16,8 @@ require(["js/qlik"], function(qlik) {
     });
 
     var app = qlik.openApp('b27f5224-45c0-4ee9-98f5-616fef28f755', config);
-
+	
+	app.bookmark.apply('dc08c810-8ae6-4b97-a12f-108942f7eab5');
     // barra selecao
     app.getObject('CurrentSelections', 'CurrentSelections');
 
@@ -32,12 +33,12 @@ require(["js/qlik"], function(qlik) {
 
 
     // menu filtros
-    app.visualization.get('cnPVVP').then(function(vis) { vis.show('periodo-ano'); });
+    app.visualization.get('cnPVVP').then(function(vis) { console.log(vis); vis.show('periodo-ano'); });
     app.visualization.get('gUZScX').then(function(vis) { vis.show('periodo-ano-mes') });
     app.visualization.get('evtEsp').then(function(vis) { vis.show('orgao-nome') });
     app.visualization.get('VDpFpjQ').then(function(vis) { vis.show('uo'); });
     app.visualization.get('RUBrQmG').then(function(vis) { vis.show('item-despesa'); });
-    app.visualization.get('de3ddead-865c-446d-95dd-70e80bda2200').then(function(vis) { vis.show('sub-item-despesa'); });
+    app.visualization.get('392d95b4-9c5b-493f-bcb8-4ea2cfc74d1b').then(function(vis) { vis.show('sub-item-despesa'); });
     app.visualization.get('6a5d2a61-ce90-4f1e-a0ef-292b5ea25764').then(function(vis) { vis.show('area-atuacao'); });
     app.visualization.get('3546daed-0ef8-4da1-a80e-c937df588d78').then(function(vis) { vis.show('classificacao'); });
     //fim menu filtros
