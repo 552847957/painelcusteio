@@ -148,8 +148,8 @@ body.phpcontato {
 
 .logo .img-logo {
     background: url('../img/logo.png') no-repeat;
-    height: 59px;
-    width: 105px;
+    height: 75px;
+    width: 120px;
     margin: 0;
     background-size: contain;
 }
@@ -251,20 +251,20 @@ body.phpcontato {
 /*	MENU	*/
 
 .navbar-default {
-    background-color: #f8ba07;
+    background-color: #00664d;
     border: 0;
     border-radius: 0;
     margin: 0;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #2f2f2f;
+    color: #fff;
     font-size: 13px;
     transition: all 0.3s ease;
 }
 
 .navbar-default .navbar-nav>li>a:hover{
-	background-color: #f7c514;
+	#background-color: #009973;
 	font-weight: bold;
 }
 
@@ -280,7 +280,7 @@ body.phpcontato {
     flex-grow: 1;
     flex-basis: auto;
     margin: .25em 0;
-    border-left: 1px solid #f7c63a;
+    border-left: 1px solid #fff;
 }
 
 .navbar-nav li:first-child {
@@ -300,11 +300,16 @@ body.phpcontato {
     width: 100%;
 }
 
+.fundocor{
+	background-color:#009973;
+}
+
 #wellcome {
     width: 100%;
     position: relative;
     display: inline-block;
-    min-height: 615px;
+	 
+   
 }
 
 #wellcome .swiper-container {
@@ -321,7 +326,7 @@ body.phpcontato {
     box-shadow:inset 1px 1px 3px 0 rgba(0,0,0,0.4);
 }
 #wellcome .swiper-slide h2 {
-    font-size: 37px;
+    font-size: 20px;
     font-weight: bold;
     color: #000;
     letter-spacing: -0.97px;
@@ -330,7 +335,7 @@ body.phpcontato {
 }
 
 #wellcome .swiper-slide h3 {
-    font-size: 36px;
+    font-size: 16px;
     font-weight: 700;
     color: #000;
     letter-spacing: -1px;
@@ -340,7 +345,7 @@ body.phpcontato {
 }
 
 #wellcome .swiper-slide p {
-    font-size: 20px;
+    font-size: 13px;
     color: #2f2f2f;
     text-align: left;
 }

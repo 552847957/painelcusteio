@@ -8,7 +8,6 @@ h3 {
     z-index: 1;
 }
 #header{
-    background-color: #f7c514 !important;
     #menu-top, #menu-contato{
         a{
             color: #2f2f2f !important;
@@ -44,14 +43,20 @@ h3 {
         .bem-vindo {
             .titulo {
                 h2 {
-                    font-size: 3em !important;
+                    font-size: 24px !important;
                 }
                 h3 {
-                    font-size: 2em !important;
+                    font-size: 20px !important;
                 }
             }
         }
     }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -97,6 +102,8 @@ h3 {
     }
 }
 
+
+
 .home {
     body,
     html,
@@ -112,7 +119,7 @@ h3 {
     b,
     li,
     div {
-        font-family: 'Raleway', sans-serif !important;
+     
     }
     span {
         display: block;
@@ -127,16 +134,16 @@ h3 {
         right: 20px;
         transition: all 0.5s;
         &.como-usar {
-            top: 204px;
+            top: 50px;
         }
         &.ver-video {
-            top: 329px;
+            top: 175px;
         }
         &.acessar-painel {
-            top: 458px;
+            top: 304px;
         }
         @media (min-width: 990px) {
-            width: 424px;
+            width: 380px;
         }
         @media (max-width: 989px) {
             width: 45%;
@@ -173,24 +180,24 @@ h3 {
         a {
             width: 100%;
             position: relative;
-            background-color: #f7c514;
+            background-color: #00664d;
             i {
                 position: absolute;
                 right: 10px;
                 bottom: 13px;
                 font-size: 59px;
-                color: #2f2f2f;
+                color: #fff;
             }
             .texto {
-                color: #2f2f2f;
+                color: #fff;
                 float: left;
                 span {
-                    font-size: 22px;
+                    font-size: 24px;
                     font-weight: 500;
                     margin-bottom: -10px;
                 }
                 h4 {
-                    font-size: 67px;
+                    font-size: 60px;
                     text-transform: uppercase;
                     font-weight: 700;
                 }
@@ -203,29 +210,31 @@ h3 {
     .bem-vindo {
         position: relative;
         padding: 66px 20px;
-        background-color: #f6f6f6;
+        background-color:#009973;
         // -webkit-box-shadow: 1px 5px 15px 0 rgba(0,0,0,0.1);
         // box-shadow: 1px 5px 15px 0 rgba(0,0,0,0.1);
         // background-image: url('../img/data-analytics-too-much-data2.png');
         background-size: cover;
         .titulo {
             width: 723px;
-            text-transform: uppercase;
+            //text-transform: uppercase;
             h2 {
-                font-size: 4em;
+                font-size: 24px;
                 line-height: 0.9em;
                 font-weight: 700;
+				color: #fff;
             }
             h3 {
-                font-size: 3em;
-                margin-bottom: -9px;
+                font-size: 20px;
+                margin-bottom: -2px;
+				color: #fff;
             }
         }
         .complemento {
-            font-size: 1.4em;
+            font-size: 13px;
             line-height: 1.2em;
-            font-weight: 400;
-            color: #2f2f2f;
+            font-weight: 500;
+            color: #fff;
             display: block;
             width: 55%;
             margin-top: 30px;
@@ -248,14 +257,14 @@ h3 {
         }
     }
     .passo {
-        padding: 60px 20px;
+        padding: 20px 20px;
         .titulo {
             h2 {
-                font-size: 60px;
+                font-size: 30px;
                 text-transform: uppercase;
                 text-align: center;
                 font-weight: 700;
-                color: #dd8a06;
+                color: #00664d;
             }
         }
         .complemento {
@@ -263,13 +272,13 @@ h3 {
             display: block;
             margin: 10px auto;
             text-align: center;
-            font-size: 23px;
-            font-weight: 300;
+            font-size: 20px;
+            font-weight: 500;
             color: #000;
         }
     }
     .passos {
-        padding: 0px 20px 85px;
+        padding: 0px 20px 20px;
         .circle-img {
             width: 160px;
             height: 160px;
@@ -295,34 +304,34 @@ h3 {
             }
         }
         h4 {
-            font-size: 1.5vw;
-            text-transform: uppercase;
+            font-size: 16px;
+            //text-transform: uppercase;
             color: #2f2f2f;
-            font-weight: 900;
+            font-weight: 600;
             text-align: center;
             .passo-titulo {
                 margin-bottom: 8px;
-                color: #dd8a06;
-                font-size: 20px;
+                color: #00664d;
+                font-size: 13px;
             }
         }
         .complemento {
-            font-size: 17px;
-            font-weight: 300;
+            font-size: 13px;
+            font-weight: 500;
             color: #000;
             text-align: center;
         }
     }
     .acessar {
-        min-height: 648px;
+        min-height: 500px;
         position: relative;
-        padding: 80px 20px;
-        background-color: #2f2f2f;
+        padding: 20px 20px;
+        background-color: #009973;
         .titulo {
             h2 {
                 text-align: center;
                 color: #fff;
-                font-size: 65px;
+                font-size: 30px;
                 text-transform: uppercase;
                 width: 100%;
                 float: left;
@@ -330,7 +339,7 @@ h3 {
             }
         }
         .complemento {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
             color: #fff;
             width: 100%;

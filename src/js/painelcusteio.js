@@ -1,9 +1,9 @@
 var prefix = '/';
 var config = {
-    host: "paineldecusteio.planejamento.gov.br",
+    host: "qapcginf.planejamento.gov.br",
     prefix: prefix,
-    port: 88,
-    isSecure: true
+    port: 80,
+    isSecure: false
 };
 
 require.config({
